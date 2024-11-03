@@ -1,0 +1,56 @@
+Heart Attack Prediction Final Model Matrics
+
+
+Best Model Algorithm: XGBoost
+
+
+Final Model Features:
+'GeneralHealth', 'PhysicalHealthDays', 'MentalHealthDays',
+'LastCheckupTime', 'PhysicalActivities', 'SleepHours', 'RemovedTeeth',
+'HadHeartAttack', 'HadAngina', 'HadStroke', 'HadAsthma',
+'HadSkinCancer', 'HadCOPD', 'HadDepressiveDisorder', 'HadKidneyDisease',
+'HadArthritis', 'HadDiabetes', 'DeafOrHardOfHearing',
+'BlindOrVisionDifficulty', 'DifficultyConcentrating',
+'DifficultyWalking', 'DifficultyDressingBathing', 'DifficultyErrands',
+'SmokerStatus', 'ECigaretteUsage', 'ChestScan', 'AgeCategory',
+'AlcoholDrinkers', 'Female', 'BMICategory', 'Alabama', 'Alaska',
+'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut',
+'Delaware', 'Florida', 'Georgia', 'Hawaii', 'Idaho', 'Illinois',
+'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana', 'Maine',
+'Maryland', 'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi',
+'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire',
+'New Jersey', 'New Mexico', 'New York', 'North Carolina',
+'North Dakota', 'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania',
+'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee', 'Texas',
+'Utah', 'Vermont', 'Virginia', 'Washington', 'West Virginia',
+'Wisconsin', 'Wyoming', 'Non_Hispanic_Black', 'Hispanic',
+'Non_Hispanic_multiracial', 'Non_Hispanic_other'
+
+
+Best hyperparameters found: 
+'subsample': 0.7, 
+'scale_pos_weight': 20, 
+'reg_lambda': 1.5, 
+'reg_alpha': 0, 
+'n_estimators': 100, 
+'min_child_weight': 3, 
+'max_depth': 7, 
+'learning_rate': 0.01, 
+'gamma': 0, 
+'colsample_bytree': 0.8
+
+
+Performance Metrics on Testing Data:
+
+# For Class 1 (History of Heart Attack):
+Recall/Sensitivity: 0.85
+Accuracy: 0.75
+Precision: 0.17
+F1-score: 0.28
+
+# Macro Average:
+Recall/Sensitivity: 0.80
+Precision: 0.58
+F1-score: 0.57
+
+# ROC Curve: AUC = 0.89
